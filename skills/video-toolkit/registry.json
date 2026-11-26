@@ -1,0 +1,628 @@
+{
+ "_о_файле": "Реестр инструментария для закона применения (Гор 11.10.2026: «чтоб навыки не залёживались, в адекватной композиции, шаблон применял навыки там, где уместно»). Статусы: боевой (есть ролик с вердиктом или принятое демо), проба (есть демо без вердикта), лежит (ни одного применения), брак (запрещён вердиктом Гора). Источник: аудит C:/CLAUD/_research/toolkit-audit-2026-10-11/A-E. Статус меняется только вердиктом Гора: ledger + эта таблица.",
+ "meanings": {
+  "цифра": "результат замера, балл, FPS, ватты, проценты",
+  "сравнение": "две стороны: плата против платы, до и после",
+  "как_устроено": "механизм внутри, который не снять: микроканалы, фазы VRM, кристаллы, разъём",
+  "подвох": "маркетинг против факта, «лучший» против налёта, наклейка против чипа",
+  "причина": "одно тянет другое: настройка биоса тянет результат",
+  "поломка": "отказ, сгорел, засор, деградация",
+  "цена": "соотношение «в 4 раза дешевле» (сами цены не называть)",
+  "жидкость": "охлаждение, СЖО, термопаста, налёт",
+  "ии_железо": "ИИ, нейросети, VRAM под модели",
+  "история": "биография железа, бренда, человека",
+  "масштаб": "тысячи ядер, рой, «много частей в одно»",
+  "звук": "писк дросселей, шум, частоты",
+  "рейтинг": "места, статус релиза, «отменён», «в продаже»",
+  "хук": "первая фраза-обещание",
+  "вывод": "вердикт: кому что брать",
+  "бренд": "концовка, плашка канала"
+ },
+ "tools": {
+  "evidence": {
+   "name": "реальный материал: своя съёмка, скрин заявки, чужой кадр с плашкой источника",
+   "meanings": "*",
+   "status": "боевой",
+   "gen": false,
+   "law": false,
+   "cpu": true,
+   "kind": "основа",
+   "visual": "товар"
+  },
+  "hf_lab": {
+   "name": "HyperFrames режим GS «Лаборатория» (tools/hf_gs.py --motion law)",
+   "meanings": [
+    "цифра",
+    "сравнение",
+    "цена",
+    "рейтинг",
+    "хук",
+    "вывод",
+    "бренд"
+   ],
+   "status": "боевой",
+   "gen": false,
+   "law": false,
+   "cpu": true,
+   "kind": "основа",
+   "visual": "текст"
+  },
+  "chart_card": {
+   "name": "карточка-столбики на VPS (/opt/shorts chart_card.py), ночной запас без 5090",
+   "meanings": [
+    "цифра",
+    "сравнение"
+   ],
+   "status": "лежит",
+   "gen": false,
+   "law": false,
+   "cpu": true,
+   "kind": "основа",
+   "visual": "текст"
+  },
+  "tesseract": {
+   "name": "Tesseract motion/video: титры, плашки, сборка, монтаж",
+   "meanings": [
+    "хук",
+    "вывод",
+    "бренд",
+    "подвох",
+    "рейтинг"
+   ],
+   "status": "боевой",
+   "gen": false,
+   "law": false,
+   "cpu": true,
+   "kind": "основа",
+   "visual": "текст"
+  },
+  "brand_kit": {
+   "name": "бренд-пакет Golden Sample в Tesseract (7 плашек)",
+   "meanings": [
+    "хук",
+    "бренд",
+    "вывод"
+   ],
+   "status": "проба",
+   "gen": false,
+   "law": false,
+   "cpu": true,
+   "kind": "основа",
+   "visual": "текст"
+  },
+  "blender": {
+   "name": "Blender: процедурная 3D-деталь железа, физически верная",
+   "meanings": [
+    "как_устроено",
+    "поломка",
+    "жидкость"
+   ],
+   "status": "боевой",
+   "gen": false,
+   "law": false,
+   "cpu": false,
+   "kind": "акцент",
+   "visual": "моногатари"
+  },
+  "anatomy": {
+   "name": "anatomy: изометрическая фигура-машина, разборка на детали",
+   "meanings": [
+    "как_устроено",
+    "поломка",
+    "причина"
+   ],
+   "status": "боевой",
+   "gen": false,
+   "law": false,
+   "cpu": true,
+   "kind": "акцент",
+   "visual": "моногатари",
+   "verdict": "Гор 11.10 на пробу кулера (Krea + 3D): «ой харош красавчик»"
+  },
+  "reel_d": {
+   "name": "рил Д: одобренный приём (✅ в VERDICTS.md) на чистой Krea 2 Turbo (Гор 11.10: «мейн А»; LoRA retroanime в беклоге)",
+   "meanings": [
+    "подвох",
+    "история",
+    "ии_железо",
+    "масштаб",
+    "хук",
+    "вывод",
+    "жидкость",
+    "причина"
+   ],
+   "status": "боевой",
+   "gen": true,
+   "law": false,
+   "cpu": false,
+   "kind": "акцент",
+   "visual": "моногатари"
+  },
+  "grok_video": {
+   "name": "Grok video: действие и речь в губы (не плывущий слайд), по лимиту",
+   "meanings": [
+    "история",
+    "хук"
+   ],
+   "status": "проба",
+   "gen": true,
+   "law": false,
+   "cpu": true,
+   "kind": "акцент",
+   "visual": "прочее"
+  },
+  "law_splitflap": {
+   "name": "табло вылетов (law-splitflap)",
+   "meanings": [
+    "рейтинг",
+    "история"
+   ],
+   "status": "проба",
+   "gen": false,
+   "law": true,
+   "cpu": false,
+   "kind": "акцент",
+   "visual": "прочее"
+  },
+  "law_oscilloscope": {
+   "name": "осциллограф: звук рисует картинку (law-oscilloscope)",
+   "meanings": [
+    "звук"
+   ],
+   "status": "лежит",
+   "gen": false,
+   "law": true,
+   "cpu": false,
+   "kind": "акцент",
+   "visual": "прочее"
+  },
+  "law_chain": {
+   "name": "цепная реакция (law-chain-reaction)",
+   "meanings": [
+    "причина"
+   ],
+   "status": "лежит",
+   "gen": false,
+   "law": true,
+   "cpu": false,
+   "kind": "акцент",
+   "visual": "прочее"
+  },
+  "law_ferrofluid": {
+   "name": "феррофлюид (law-ferrofluid)",
+   "meanings": [
+    "жидкость"
+   ],
+   "status": "лежит",
+   "gen": false,
+   "law": true,
+   "cpu": false,
+   "kind": "акцент",
+   "visual": "прочее"
+  },
+  "law_shadow": {
+   "name": "тень складывается в смысл (law-shadow)",
+   "meanings": [
+    "подвох"
+   ],
+   "status": "лежит",
+   "gen": false,
+   "law": true,
+   "cpu": false,
+   "kind": "акцент",
+   "visual": "прочее"
+  },
+  "law_murmuration": {
+   "name": "мурмурация (law-murmuration)",
+   "meanings": [
+    "масштаб"
+   ],
+   "status": "лежит",
+   "gen": false,
+   "law": true,
+   "cpu": false,
+   "kind": "акцент",
+   "visual": "прочее"
+  },
+  "law_origami": {
+   "name": "один лист, развёртка (law-origami)",
+   "meanings": [
+    "как_устроено"
+   ],
+   "status": "лежит",
+   "gen": false,
+   "law": true,
+   "cpu": false,
+   "kind": "акцент",
+   "visual": "моногатари"
+  },
+  "law_graffiti": {
+   "name": "граффити, контра против маркетинга (law-graffiti)",
+   "meanings": [
+    "подвох"
+   ],
+   "status": "лежит",
+   "gen": false,
+   "law": true,
+   "cpu": false,
+   "kind": "акцент",
+   "visual": "прочее"
+  },
+  "law_watercolor": {
+   "name": "акварель (law-watercolor)",
+   "meanings": [
+    "история"
+   ],
+   "status": "лежит",
+   "gen": false,
+   "law": true,
+   "cpu": false,
+   "kind": "акцент",
+   "visual": "прочее"
+  },
+  "law_automaton": {
+   "name": "автоматон 1774 (law-automaton), не для рилов SHAFT",
+   "meanings": [
+    "история"
+   ],
+   "status": "лежит",
+   "gen": false,
+   "law": true,
+   "cpu": false,
+   "kind": "акцент",
+   "visual": "прочее"
+  },
+  "procedural_film": {
+   "name": "procedural-film: свой закон стиля кодом (жжёт лимит агентами)",
+   "meanings": [
+    "история",
+    "масштаб",
+    "причина",
+    "как_устроено",
+    "цена",
+    "сравнение",
+    "вывод"
+   ],
+   "status": "принят",
+   "gen": false,
+   "law": true,
+   "cpu": false,
+   "kind": "акцент",
+   "visual": "прочее",
+   "verdict": "Гор 15.10.2026 на Э04: «запиши канон э04 это важно мы справились, прод качественно другого уровня», «без гейта лей на ютуб»: пилот принят в каноне Э04 под смыслы как_устроено, цена, сравнение, вывод"
+  },
+  "stand_fallback": {
+   "name": "затычка: ближайший кадр стенда, когда предмета нет",
+   "meanings": "*",
+   "status": "боевой",
+   "gen": false,
+   "law": false,
+   "cpu": true,
+   "kind": "затычка",
+   "visual": "товар"
+  },
+  "shaft_filter": {
+   "name": "фильтр SHAFT на видеослоях",
+   "meanings": [],
+   "status": "брак",
+   "gen": false,
+   "law": false,
+   "cpu": true,
+   "kind": "брак",
+   "why": "Гор 09.10: «ужас, цвета клипает как сон больного»",
+   "visual": "прочее"
+  },
+  "wan": {
+   "name": "Wan (любая версия)",
+   "meanings": [],
+   "status": "брак",
+   "gen": true,
+   "law": false,
+   "cpu": false,
+   "kind": "брак",
+   "why": "закон ген-конвейера: Wan запрещён",
+   "visual": "прочее"
+  },
+  "qwen_d": {
+   "name": "Qwen-Image для рилов Д",
+   "meanings": [],
+   "status": "брак",
+   "gen": true,
+   "law": false,
+   "cpu": false,
+   "kind": "брак",
+   "why": "Гор 08.10: «квен кал собаки»",
+   "visual": "прочее"
+  },
+  "voice_double": {
+   "name": "двойник голоса Гора",
+   "meanings": [],
+   "status": "брак",
+   "gen": true,
+   "law": false,
+   "cpu": false,
+   "kind": "брак",
+   "why": "Гор 04.10: голос только живой или xAI",
+   "visual": "прочее"
+  },
+  "freevideo": {
+   "name": "FreeVideo (MiniMax H3, локально, замер 06.10)",
+   "meanings": [
+    "история",
+    "хук",
+    "масштаб"
+   ],
+   "status": "лежит",
+   "gen": true,
+   "law": false,
+   "cpu": false,
+   "kind": "акцент",
+   "visual": "прочее"
+  },
+  "shin_cut": {
+   "name": "рил Д61 «Шин» (семья рилов наравне с Monogatari): 3D-разрез anatomy на ломти, удар, застывший дым и стружка, стоп-кадры со всех сторон, срастание; поверх стоп-кадров Krea (skills/shin-cut)",
+   "meanings": [
+    "как_устроено",
+    "поломка"
+   ],
+   "status": "боевой",
+   "gen": false,
+   "law": false,
+   "cpu": false,
+   "kind": "акцент",
+   "visual": "моногатари",
+   "verdict": "Гор 12.10: «запиши в скил, положи в пайплайн инструментарий», «это по сути один из рилов, подобно Monogatari»"
+  },
+  "animator_draw": {
+   "name": "Animator: движок «рисуется рукой» (штрих за штрихом, обводка, заливка кистью, текст по буквам), на процессоре, без ключа; Gemini-часть (картинки, голос) не берём",
+   "meanings": [
+    "как_устроено",
+    "история",
+    "причина"
+   ],
+   "status": "проба",
+   "gen": false,
+   "law": false,
+   "cpu": true,
+   "kind": "акцент",
+   "visual": "моногатари",
+   "note": "пилот 12.10 x Monogatari: кадры Krea A чернилами по белому (H:/monogatari/cooler_trial/ink_A, cgen_ink.py) -> Animator --duration 4 -> вариант «мел по чернилам» (ffmpeg lutyuv=y=negval + лёгкий синий) в палитре; плотные текстуры (вид сверху на рёбра, тысячи компонентов) не рисует: картинку уменьшать до 544x960 и чистить медианой; при малом числе штрихов рисует диагональной шторкой. Пилот: projects/anatomy/ink_trial/ink_dark_9x16.mp4. Вердикт Гора: ждём"
+  },
+  "krea_i2i": {
+   "name": "Krea поверх 3D-каркаса (tools/krea_i2i.py): кадр anatomy/Blender латентом, denoise 0.4-0.5, геометрия от модели, стиль Monogatari",
+   "meanings": [
+    "как_устроено",
+    "поломка",
+    "жидкость",
+    "хук",
+    "история"
+   ],
+   "status": "проба",
+   "gen": true,
+   "geom_from_3d": true,
+   "law": false,
+   "cpu": false,
+   "kind": "акцент",
+   "visual": "моногатари",
+   "note": "замер 12.10: 0.4 = форма модели, 0.55 = арки трубок сверху, 0.7 = галюн; на механике разрешён только так (Krea с нуля механику врёт)"
+  },
+  "ff_tracking": {
+   "name": "ff-tracking (C:/Apps/video-skills/ff-tracking): виртуальная камера снимает экран ИИ-агента, трекер цепляется за каждый печатаемый символ; Rust fframes + Skia (Vulkan на Windows), звук синтезом tools/sfx.py, MIT",
+   "meanings": [
+    "ии_железо",
+    "хук"
+   ],
+   "status": "лежит",
+   "gen": false,
+   "law": false,
+   "cpu": false,
+   "kind": "акцент",
+   "visual": "прочее",
+   "note": "Гор 12.10 «в инструменты». Сборка ждёт Rust MSVC + LLVM/libclang + FFmpeg 9.0 shared (ставит tools/maya/PREP-RIG.bat). Сцены в hud/src/lib.rs SCENE_LIST (текст, палитра, путь камеры). Смысл: «ИИ пишет код», «агент печатает», терминал как живой кадр."
+  },
+  "claude_motion": {
+   "name": "claude-motion (whaleyxbt, MIT): правила вкуса, звук синтезом по таймлайну, петля самопроверки кадров, веб-симуляции в 60 к/с; Remotion 4 (C:/Apps/video-skills/ext/whaleyxbt_claude-motion)",
+   "meanings": [
+    "звук",
+    "хук",
+    "цифра"
+   ],
+   "status": "лежит",
+   "gen": false,
+   "law": false,
+   "cpu": true,
+   "kind": "акцент",
+   "visual": "текст",
+   "note": "13.10 поставлен (npm install), дым пройден: звук `py -3.12 -m sfx sfx/cues/effort.py` + `npx remotion render EffortVideo out/draft.mp4 --scale=0.5` = 22 с за ~1 мин. Под линию Э: щелчки и пинги на события (sfx/synth.py, mix.py, loudness.py) и самопроверка кадров (.claude/skills/review-loop). npm-скрипт sfx зовёт python3: на Windows звать py -3.12 -m sfx."
+  },
+  "mg_skills": {
+   "name": "motion-graphics-skills (charlie947, MIT): 13 скилов презентационного моушна, анимированные схемы, графики, диаграммы (C:/Apps/video-skills/ext/charlie947_motion-graphics-skills/skills)",
+   "meanings": [
+    "цифра",
+    "сравнение",
+    "причина",
+    "как_устроено"
+   ],
+   "status": "лежит",
+   "gen": false,
+   "law": false,
+   "cpu": true,
+   "kind": "акцент",
+   "visual": "текст",
+   "note": "13.10 склонирован; чистые скилы (читать по пути, глобально не ставить). Под «схему на фразу» линии Э: типы схем и диаграмм."
+  },
+  "animate_cth": {
+   "name": "animate (cth9191, MIT): процедурные ролики в 7 стилях (аппликация, ризография, пиксель и др.), раскадровка до рендера, canvas одним файлом (C:/Apps/video-skills/ext/cth9191_animate)",
+   "meanings": [
+    "история",
+    "хук",
+    "масштаб"
+   ],
+   "status": "лежит",
+   "gen": false,
+   "law": false,
+   "cpu": true,
+   "kind": "акцент",
+   "visual": "прочее",
+   "note": "13.10 склонирован; Playwright Chromium уже стоит. Под маскота линии Э (пиксель) и короткие объяснялки; раскадровку показывать Гору до рендера."
+  },
+  "product_launch_motion": {
+   "name": "product-launch-motion (AbubakrChan, MIT): промо запуска продукта из кода, одна фигура без склеек, пружины, камера (C:/Apps/video-skills/ext/AbubakrChan_product-launch-motion)",
+   "meanings": [
+    "хук",
+    "бренд",
+    "вывод"
+   ],
+   "status": "лежит",
+   "gen": false,
+   "law": false,
+   "cpu": true,
+   "kind": "акцент",
+   "visual": "текст",
+   "note": "13.10 склонирован (SKILL.md в корне). Под промо: Cognopolis, сборки GSPC, концовки-плашки."
+  },
+  "claude_motion_design": {
+   "name": "claude-motion-design (howseen-ai, MIT): промо, где картинки бьют в такт музыке, HTML + Playwright + ffmpeg (C:/Apps/video-skills/ext/howseen-ai_claude-motion-design/skill/motion-design)",
+   "meanings": [
+    "хук",
+    "бренд",
+    "история"
+   ],
+   "status": "лежит",
+   "gen": false,
+   "law": false,
+   "cpu": true,
+   "kind": "акцент",
+   "visual": "прочее",
+   "note": "13.10 склонирован, Python-зависимости поставлены (playwright, imageio-ffmpeg). Под нарезки фото железа в бит."
+  },
+  "mg_bartbart": {
+   "name": "motion-graphics (Barty-Bart): отделяет человека от фона, графика выходит на словах речи; 6 скилов (C:/Apps/video-skills/ext/Barty-Bart_motion-graphics/skills)",
+   "meanings": [
+    "хук",
+    "история"
+   ],
+   "status": "лежит",
+   "gen": false,
+   "law": false,
+   "cpu": true,
+   "kind": "акцент",
+   "visual": "прочее",
+   "note": "13.10 склонирован; лицензия NOASSERTION. Только с живой съёмкой Гора (людей в кадре по законам нет, кроме Гора)."
+  },
+  "hf_student_kit": {
+   "name": "HyperFrames Student Kit (nateherkai): 14 скилов монтажа по транскрипту, вырезка пауз и оговорок, 406 карточек моушна (C:/Apps/video-skills/ext/hyperframes-student-kit)",
+   "meanings": [
+    "хук",
+    "вывод"
+   ],
+   "status": "лежит",
+   "gen": false,
+   "law": false,
+   "cpu": true,
+   "kind": "основа",
+   "visual": "текст",
+   "note": "стоит с 10.10, обновлён 13.10; лицензия NOASSERTION, только как образец. Вырезка пауз под линию Э (пауза ≤ 0,25 с); транскрипт у нас whisper, не ElevenLabs."
+  },
+  "gsap_skills": {
+   "name": "gsap-skills (greensock, официальные, MIT): как правильно писать GSAP (C:/Apps/video-skills/ext/greensock_gsap-skills/skills)",
+   "meanings": [],
+   "status": "справка",
+   "gen": false,
+   "law": false,
+   "cpu": true,
+   "kind": "справка",
+   "visual": "прочее",
+   "note": "13.10 склонирован. Справка для hf_gs.py: HyperFrames работает на GSAP."
+  },
+  "remotion": {
+   "name": "Remotion (remotion-dev): видео на React (C:/Apps/video-skills/ext/remotion-dev_remotion), скилы (C:/Apps/video-skills/ext/remotion-dev_skills/skills), claude-remotion-skill (haidrrrry, MIT, плавность движения: C:/Apps/video-skills/ext/haidrrrry_claude-remotion-skill)",
+   "meanings": [],
+   "status": "справка",
+   "gen": false,
+   "law": false,
+   "cpu": true,
+   "kind": "справка",
+   "visual": "прочее",
+   "note": "13.10 склонирован по слову Гора «ставь все репозитории». Лицензия Remotion: бесплатно для частных лиц и компаний до 3 человек, иначе платно. Движок фабрики остаётся HyperFrames; Remotion уже внутри claude-motion."
+  },
+  "motion_web": {
+   "name": "motion (motiondivision, MIT) и motion-dev-animations-skill (199-biotechnologies, MIT): анимации сайтов и приложений (C:/Apps/video-skills/ext/motiondivision_motion, C:/Apps/video-skills/ext/199-biotechnologies_motion-dev-animations-skill)",
+   "meanings": [],
+   "status": "справка",
+   "gen": false,
+   "law": false,
+   "cpu": true,
+   "kind": "справка",
+   "visual": "прочее",
+   "note": "13.10 склонирован. Не для роликов: для сайта GSPC (Nuxt3) и лендингов."
+  },
+  "motion_design_lottie": {
+   "name": "motion-design-skill (LottieFiles, MIT): тайминги, кривые, хореография, принципы Диснея (~/.claude/skills/motion-design)",
+   "meanings": [],
+   "status": "справка",
+   "gen": false,
+   "law": false,
+   "cpu": true,
+   "kind": "справка",
+   "visual": "прочее",
+   "note": "стоит глобально с 10.10, обновлён 13.10. Правила движения для любого инструмента."
+  },
+  "swarm_roi": {
+   "name": "пилот «Рой» (Э03, 14.10): сотни SMD-деталей на столе под луной складываются по репликам, как сахар у SHAFT; процедурно, вид сверху, контур тушью, жёсткая тень (projects/shaft-visions/shorts_e/E03_ai_reverse/swarm.py)",
+   "meanings": [
+    "как_устроено",
+    "причина",
+    "вывод",
+    "ии_железо"
+   ],
+   "status": "проба",
+   "gen": false,
+   "law": false,
+   "cpu": true,
+   "kind": "акцент",
+   "visual": "моногатари"
+  }
+ },
+ "limits": {
+  "gen_share_max": 0.2,
+  "accents_max": {
+   "short": 2,
+   "long": 6
+  },
+  "law_max": {
+   "short": 1,
+   "long": 3
+  },
+  "fallback_max_sec": {
+   "short": 3,
+   "long": 30
+  },
+  "pilots_max": 1,
+  "number_tools": [
+   "evidence",
+   "hf_lab",
+   "chart_card",
+   "tesseract",
+   "brand_kit",
+   "procedural_film"
+  ],
+  "mechanism_meanings": [
+   "как_устроено",
+   "поломка"
+  ],
+  "visual_share": {
+   "товар_min": 0.2,
+   "моногатари": 0.3,
+   "моногатари_tol": 0.1,
+   "_слово": "Гор 11.10: 20 % товар или подобное по категории, 30 % схематичный Monogatari, остальное текст в рамках и на усмотрение"
+  },
+  "number_tools_note": "procedural_film в number_tools с 15.10 по канону Э04: только цифры из фактчека, нарисованные процедурно (сетка «около 50 из 300»); Гор 15.10.2026 на Э04: «запиши канон э04 это важно мы справились, прод качественно другого уровня», «без гейта лей на ютуб»"
+ },
+ "visual_classes": {
+  "товар": "изображение обсуждаемого товара или подобного по категории (фото, скрин, своя съёмка железа)",
+  "моногатари": "схематизированный Monogatari/SHAFT: рилы Д (Krea), 3D-схемы anatomy и Blender в рисованной подаче",
+  "текст": "текст в рамках: цифры HF «Лаборатория», плашки, титры",
+  "прочее": "law-скилы, генеративное видео и остальное на усмотрение"
+ }
+}

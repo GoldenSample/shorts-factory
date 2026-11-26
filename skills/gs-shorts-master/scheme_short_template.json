@@ -1,0 +1,18 @@
+{
+  "_о_файле": "Машинный шаблон сценария линии Э «Схема на фразу» (канон SCHEME_SHORT.md, слово Гора 12.10.2026 «скрипт шортса в канон»). Доли и темп сняты с эталона по таймкодам слов. Генератор сценария и план hf_gs берут такты отсюда; цифры только из facts, голос Гор или xAI.",
+  "format": {"w": 1080, "h": 1920, "fps": 60, "dur_s": [45, 55], "words": [140, 160], "wps": [2.9, 3.2], "max_pause_s": 0.25, "event_every_s": [0.3, 0.5]},
+  "captions": {"mode": "by_word", "lines": 2, "y_frac": 0.6, "line1": "regular", "line2": "bold", "accent": "keyword_color", "switch": "by_phrase", "max_lag_s": 0.1},
+  "sound": {"event": "click_or_ping_2700hz", "chapter": "sub_hit", "bed_db_under_voice": [-22, -18], "bed_by_chapter": true},
+  "beats": [
+    {"id": "hook", "name": "Хук-вопрос с выгодой", "share": 0.09, "words": 14, "scheme": ["live_cover"], "rule": "вопрос-обещание + контраст в разы; обложка живёт, на ключевой цифре сгорает", "face": "optional_split"},
+    {"id": "pretext", "name": "Повод", "share": 0.05, "words": 8, "scheme": ["title_card"], "rule": "вышло, нашли, замерили; одно имя предмета"},
+    {"id": "mechanism", "name": "Механизм одной фразой", "share": 0.06, "words": 8, "scheme": ["checklist", "terminal", "anatomy_card"], "rule": "что делает по сути, без терминов"},
+    {"id": "application", "name": "Применение", "share": 0.19, "words": 29, "scheme": ["fork", "decision_tree"], "rule": "как это работает на зрителя"},
+    {"id": "proof", "name": "Цифры-доказательства", "share": 0.18, "words": 26, "scheme": ["number_card", "race", "stamp"], "rule": "2-3 цифры из facts, у каждой своя карточка, источник назван; цифра финальная с первого кадра (--motion law)"},
+    {"id": "how_it_works", "name": "Глава «Как работает?»", "share": 0.25, "words": 38, "scheme": ["chapter_title", "loop_check", "load_bars"], "rule": "заголовок главы крупно, ключевое слово цветом; процесс петлёй"},
+    {"id": "how_to", "name": "Глава «Как сделать у себя?»", "share": 0.12, "words": 19, "scheme": ["chapter_title", "ui_steps"], "rule": "шаги по порядку, реальный скрин интерфейса (доля товара)"},
+    {"id": "cta", "name": "Призыв со словом-кодом", "share": 0.06, "words": 9, "scheme": ["code_word_card"], "rule": "одно слово-код в комментарии, одно действие; лид-магнит в воронку", "face": "optional_split"}
+  ],
+  "laws_over_format": ["цифры финальные с первого кадра", "голос живой Гора или xAI", "лицо только живая съёмка Гора", "товар >= 20 %", "моногатари 30 % +- 10 %", "генератив <= 20 %", "гейт фактов", "без людей и аниме-фигур в схемах: маскот предметный"],
+  "reference": "C:/CLAUD/_research/reel-reverse-2026-10-12/REVERSE.md"
+}

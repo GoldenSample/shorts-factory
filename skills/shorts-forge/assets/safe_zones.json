@@ -1,0 +1,45 @@
+{
+  "_": "Безопасные зоны 1080x1920. Профиль = ДАННЫЕ, не константа в коде: интерфейс площадок меняется, правится этот файл. source: official = взято из документации площадки; measured = наш замер калибровочной сеткой; derived = пересечение. Поле measured_at показывает протухание.",
+  "canvas": [1080, 1920],
+  "profiles": {
+    "meta_reels": {
+      "source": "official",
+      "ref": "facebook.com/business/ads-guide/update/image/instagram-reels",
+      "measured_at": "2026-07-27",
+      "margins_pct": { "top": 14, "bottom": 35, "left": 6, "right": 6 },
+      "note": "Самый строгий низ из всех. С дисклеймерами низ 40% (y<=1152)."
+    },
+    "vk_clips_community": {
+      "source": "official",
+      "ref": "ads.vk.ru/help/features/safe",
+      "measured_at": "2026-07-27",
+      "margins_pct": { "top": 15, "bottom": 15, "left": 0, "right": 20 },
+      "note": "Низ мягче всех, зато уникальное ограничение СПРАВА 20% (216px)."
+    },
+    "vk_clips_ads": {
+      "source": "official",
+      "ref": "ads.vk.ru/help/features/safe",
+      "measured_at": "2026-07-27",
+      "margins_pct": { "top": 15, "bottom": 20, "left": 10, "right": 10 }
+    },
+    "tiktok_expanded": {
+      "source": "hypothesis",
+      "ref": "официальных цифр НЕТ, только скачиваемые ZIP-шаблоны; зона зависит от длины подписи",
+      "measured_at": null,
+      "margins_px": { "top": 300, "bottom": 670, "left": 80, "right": 180 }
+    },
+    "youtube_shorts": {
+      "source": "hypothesis",
+      "ref": "официальных цифр НЕТ, safe area отдаётся PNG-оверлеем и направляющими в редакторе",
+      "measured_at": null,
+      "margins_px": { "top": 300, "bottom": 670, "left": 90, "right": 190 }
+    },
+    "universal": {
+      "source": "derived",
+      "ref": "пересечение строгих ограничений + запас; ПО НЕМУ И РЕНДЕРИТЬ",
+      "measured_at": "2026-07-27",
+      "margins_px": { "top": 300, "bottom": 690, "left": 96, "right": 96 },
+      "note": "Блок субтитров: низ последней строки на y=1180, растёт вверх. Кегль от 54px, обводка. Переживает все четыре площадки."
+    }
+  }
+}

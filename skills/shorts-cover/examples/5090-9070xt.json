@@ -1,0 +1,32 @@
+{
+ "name": "5090-9070xt",
+ "title": "5090 → 9070 XT",
+ "status": "обложка 01.10 в стиле сайта (14.10): цвета по умолчанию — модели белые, 70% золотом, подпись голубая, знак в подвале",
+ "bg": "#070A12",
+ "facts": {
+  "script": ["/opt/shorts/r5090/fact_gate.json", "/opt/shorts/r5090/final.json", "../../../docs/scripts/5090-9070xt/final.json"]
+ },
+ "top_label": {"text": "RTX 5090", "max": 190},
+ "top_photo": {
+  "src": "/opt/shorts/r5090/cover/src/7361943333-1.jpg",
+  "origin": "pc-store 7361943333 «ПК Asus 5090 Astral, 9950x3D2, 96 ГБ, HS420», снимок 1: корпус целиком на белом",
+  "crop": {"x": 105, "y": 65, "w": 730, "h": 800},
+  "key_white": {"similarity": 0.10, "blend": 0.08},
+  "fit": "contain",
+  "box": [90, 215, 900, 690]
+ },
+ "middle": {
+  "big": "70%",
+  "max": 250,
+  "caption": "СКОРОСТИ В 1440p"
+ },
+ "bottom_photo": {
+  "src": "/opt/shorts/r5090/cover/src/7361129981-1.jpg",
+  "origin": "pc-store 7361129981 «ПК для CS, Tarkov, BF6: RX 9070 XT, 9850x3D», снимок 1: видна надпись RADEON",
+  "crop": {"x": 0, "y": 359, "w": 1100, "h": 494},
+  "fit": "cover",
+  "box": [0, 1215, 1080, 485],
+  "fade": [16, 14]
+ },
+ "bottom_label": {"text": "RX 9070 XT", "max": 165}
+}

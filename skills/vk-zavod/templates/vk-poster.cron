@@ -1,0 +1,7 @@
+# /etc/cron.d/vk-poster - ВК-очередь ИИ-завода GSPC (время сервера UTC)
+SHELL=/bin/bash
+HOME=/root
+# датчик карточки сообщества раз в сутки (журнал в /opt/shorts/vk.db)
+15 5 * * * root cd /opt/shorts && /usr/local/lib/hermes-agent/venv/bin/python3 vk/vk_probe.py --quiet >> /opt/shorts/vk/vk.log 2>&1
+# сбор и подготовка после ночного ролика и дневных выпусков, публикация к вечерним слотам МСК
+40 6,12 * * * root cd /opt/shorts && flock -n /run/vk_poster.lock /usr/local/lib/hermes-agent/venv/bin/python3 vk/vk_poster.py run >> /opt/shorts/vk/vk.log 2>&1
